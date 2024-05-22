@@ -47,19 +47,24 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  margin: 2.5rem 0;
+  margin: 2.5rem 1rem;
 }
 
+/* #logo{
+  width: 20rem;
+  height: 20rem;
+} */
 
 .search {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin: auto;
 }
 
 .search input {
   height: 4.8rem;
-  width: 46.2rem;
+  width: 30rem;
   background-color: #06181C;
   color: #7C7C8A;
   border: 1px solid #ccc;
@@ -75,9 +80,8 @@ header {
   text-transform: uppercase;
   font-size: 1.4rem;
   border-radius: 0 .4rem .4rem 0;
-  height: 4.8rem;
   border: none;
-  padding: 0 1rem;
+  padding: 1rem;
 
   cursor: pointer;
 }
@@ -156,4 +160,22 @@ td .remove {
   color: #F75A68;
 
   cursor: pointer;
+}
+/* Começo da responsividade */
+
+@media (max-width: 600px) {
+    
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+  
+    margin: 2.5rem 1rem;
+  }
+
+  .search input {
+    width: 20rem;
+  }
 }
